@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Eczar:wght@400..800&family=Josefin+Sans:ital,wght@0,100;1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon" />
+    <title>Harue</title>
+    <style>
+      body {
+        height: 410vh;
+        background-image: url(images/background.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        backdrop-filter: blur(10px);
+      }
+      #shop-page {
+        position: absolute;
+        top: -700px;
+      }
+      .btn:hover {
+        font-weight: bold;
+        box-shadow: 0 0 0 4px #dfe3c8, 0 0 0 8px #798b76;
+        transition: 0.2s;
+        font-weight: bold;
+      }
+      h5:hover,
+      p:hover {
+        color: red;
+        text-shadow: #0a0a0a;
+      }
+      h5 {
+        font-family: "Eczar", serif;
+      }
+      p {
+        font-family: "Josefin Sans", serif;
+        font-weight: 1000;
+        font-size: 17px;
+      }
+      /* scroll */
+      html {
+        scroll-behavior: smooth;
+      }
+      #moistur {
+        scroll-margin-top: 0px;
+      }
+      #toner {
+        scroll-margin-top: -30px;
+      }
+      #serum {
+        scroll-margin-top: -30px;
+      }
+      #cleanser {
+        scroll-margin-top: -30px;
+      }
+      #suncream {
+        scroll-margin-top: -30px;
+      }
+      @media (max-width: 425px) {
+      #shop-page .card {
+          position: relative;
+          top: -40px;
+          left: -180px;
+          width: 243px;
+        }
+        footer{
+          z-index: 20;
+        
+      
+        }
+        body{
+          height: 1680vh;
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <!-- shop section -->
+    <section id="shop-page" style="margin-top: 1%">
+      <!-- navbar -->
+      <nav
+        class="navbar navbar-expand-lg bg-navbar"
+        style="
+          z-index: 25;
+          position: relative;
+          bottom: -700px;
+          margin-left: 400px;
+        "
+      >
+        <div class="container-fluid">
+          <!-- Toggler icon (///) button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <!-- nav item -->
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#moistur"
+                  style="
+                    color: #1c1d1c;
+                    background: rgba(255, 255, 255, 0.1);
+                    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+                    border-radius: 50px;
+                    backdrop-filter: blur(10px);
+                    width: 120px;
+                    text-align: center;
+                    margin-left: 20px;
+                    font-family: Eczar, serif;
+                    font-size: 20px;
+                  "
+                  >Moisturizer</a
+                >
+                <!-- toner -->
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#toner"
+                  style="
+                    color: #161616;
+                    background: rgba(255, 255, 255, 0.1);
+                    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+                    border-radius: 50px;
+                    backdrop-filter: blur(10px);
+                    width: 120px;
+                    text-align: center;
+                    margin-left: 20px;
+                    font-family: Eczar, serif;
+                    font-size: 20px;
+                  "
+                  >Toner</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#serum"
+                  style="
+                    color: #161616;
+                    background: rgba(255, 255, 255, 0.1);
+                    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+                    border-radius: 50px;
+                    backdrop-filter: blur(10px);
+                    width: 120px;
+                    text-align: center;
+                    margin-left: 20px;
+                    font-family: Eczar, serif;
+                    font-size: 20px;
+                  "
+                  >Serum</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#cleanser"
+                  style="
+                    color: #0a0a0a;
+                    background: rgba(255, 255, 255, 0.1);
+                    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+                    border-radius: 50px;
+                    backdrop-filter: blur(10px);
+                    width: 120px;
+                    text-align: center;
+                    margin-left: 20px;
+                    font-family: Eczar, serif;
+                    font-size: 20px;
+                  "
+                  >Cleanser</a
+                >
+              </li>
+              <!-- sunscream -->
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#suncream"
+                  style="
+                    color: #0a0a0a;
+                    background: rgba(255, 255, 255, 0.1);
+                    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+                    border-radius: 50px;
+                    backdrop-filter: blur(10px);
+                    width: 120px;
+                    text-align: center;
+                    margin-left: 20px;
+                    font-family: Eczar, serif;
+                    font-size: 20px;
+                  "
+                  >Suncream</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- shop cards -->
+      <!-- shop cards - moistur -->
+
+      <div
+        class="row row-cols-1 row-cols-md-4 g-4"
+        id="moistur"
+        style="
+          z-index: 20;
+          position: relative;
+          bottom: -770px;
+          left: 200px;
+          width: 1200px;
+        "
+      >
+        <!-- skin1004-moistur(1) Card-1 -->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/skin1004-moisture-removebg-preview (2).png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+                left: 0%;
+                bottom: 230px;
+                left: -34px;
+                width: 290px;
+                padding: 18px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Skin1004 - moisturizer (50ml)</h5>
+              <p class="card-text">
+                Hydrates, soothes, and brightens. Suitable for sensitive and dry
+                skin. <br />
+                $14.70
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Anua-moisture Card-2 -->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/BOJ-moistur-removebg-preview.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+
+                bottom: 200px;
+                left: -40px;
+                width: 320px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Beauty Of Joseon - moisturizer (50ml)</h5>
+              <p class="card-text">
+                Hydrates deeply & brightens skin. For sensitive and dry skin.
+                <br />$21.00
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- beauty of joseon-moistur Card-3 -->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/Anua-moistur-removebg-preview.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+                left: 0%;
+                bottom: 170px;
+                left: -84px;
+                width: 400px;
+                padding: 18px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Anua - moisturizer (50ml)</h5>
+              <p class="card-text">
+                Hydrates, soothes,<br />
+                and refreshes all skin types. &nbsp; &nbsp; &nbsp; &nbsp; <br />
+                $25.00
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- skin1004-moisture(2) card-4-->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/anuapeach-moisture-removebg-preview.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+                left: 0%;
+                bottom: 240px;
+                left: -38px;
+                width: 320px;
+                padding: 18px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Anua peach - moisturizer (50ml)</h5>
+              <p class="card-text">
+                Provides lightweight hydration, softens, and suits all skin
+                types.
+                <br />
+                $28.00
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- shop cards - toner -->
+      <div
+        class="row row-cols-1 row-cols-md-4 g-4"
+        id="toner"
+        style="
+          z-index: 20;
+          position: relative;
+          bottom: -780px;
+          left: 200px;
+          width: 1200px;
+          margin-top: 80px;
+        "
+      >
+        <!-- skin1004-toner Card-1 -->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/skin1004-toner-removebg-preview.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+                left: 0%;
+                bottom: 210px;
+                left: -30px;
+                width: 280px;
+                padding: 18px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Skin1004 - toner (210ml)</h5>
+              <p class="card-text">
+                Tones, hydrates, and balances the skin. Suitable for sensitive
+                skin.
+                <br />
+                $18.00
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Anua-toner Card-2 -->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/Anua-toner-removebg-preview.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+
+                bottom: 260px;
+                left: 11px;
+                width: 200px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Anua - toner <br />
+                (250ml)
+              </h5>
+              <p class="card-text">
+                Tones, hydrates, and balances the skin. Suitable for sensitive
+                skin. <br />
+
+                $18.00
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- beauty of joseon - toner(1) Card-3 -->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/Boj-toner-removebg-preview.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+                left: 0%;
+                bottom: 231px;
+                left: 1px;
+                width: 210px;
+                padding: 18px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Beauty of Joseon - Glow toner (150ml)</h5>
+              <p class="card-text">
+                Hydrates, brightens, and nourishes .Suitable for dry and dull
+                skin.
+                <br />
+                $18.00
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- skin1004- green toner(2) card-4-->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/Boj-green-toner-removebg-preview.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+                left: 0%;
+                bottom: 230px;
+                left: -38px;
+                width: 300px;
+                padding: 18px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Beauty of Joseon - Green toner (150ml)</h5>
+              <p class="card-text">
+                Exfoliates gently, hydrates, and revitalizes, suitable for oily
+                and combination skin.
+                <br />$16.00
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- shop cards - serum -->
+      <div
+        class="row row-cols-1 row-cols-md-4 g-4"
+        id="serum"
+        style="
+          z-index: 20;
+          position: relative;
+          bottom: -780px;
+          left: 200px;
+          width: 1200px;
+          margin-top: 80px;
+        "
+      >
+        <!-- skin1004- Ampoule Card-1 -->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/skin1004-serum_ampoule_-removebg-preview.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+                left: 0%;
+                bottom: 230px;
+                left: 5px;
+                width: 200px;
+                padding: 18px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Skin1004 - Ampoule (55ml)</h5>
+              <p class="card-text">
+                Calms, hydrates, and revitalizes; suitable for all skin types,
+                especially sensitive. $13.00
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Anua-serum (1) Card-2 -->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/Anua-serum-removebg-preview.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+
+                bottom: 211px;
+                left: -13px;
+                width: 250px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Anua - niacinamide 10% serum  (30ml)</h5>
+              <p class="card-text">
+                Hydrates, calms, and strengthens; suitable for sensitive skin. 
+                <br />
+
+                $19.00
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Auua-serum (2) Card-3 -->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/Anua-peach-serum-removebg-preview.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+                left: 0%;
+                bottom: 237px;
+                left: -35px;
+                width: 300px;
+                padding: 18px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Anua - peach serum (30ml)</h5>
+              <p class="card-text">
+                lightweight, non-greasy texture. Improves skin tone. Suitable for all skin type.
+                 <br />
+                $25.00
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- beauty of joseon-serum(2) card-4-->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/Boj-serum-removebg-preview.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+                left: 0%;
+                bottom: 240px;
+                left: -20px;
+                width: 270px;
+                padding: 18px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Beauty Of Joseon - serum (30ml)</h5>
+              <p class="card-text">
+                Hydrates, brightens, and improves skin texture, suitable for all
+                skin types.
+                <br />
+                $17.00
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- shop cards - cleanser -->
+      <div
+        class="row row-cols-1 row-cols-md-4 g-4"
+        id="cleanser"
+        style="
+          z-index: 20;
+          position: relative;
+          bottom: -780px;
+          left: 200px;
+          width: 1200px;
+          margin-top: 80px;
+        "
+      >
+        <!-- skin1004-cleanser(1) Card-1 -->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/skin1004-cleanserampoule-removebg-preview.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+                left: 0%;
+                bottom: 219px;
+                left: -30px;
+                width: 300px;
+                padding: 18px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Skin1004 - ampoule cleanser (125ml)</h5>
+              <p class="card-text">
+                Gentle, low-pH, soothes and hydrates the skin. Suitable for sensitive skin types.
+                <br>$17.00
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- skin1004-cleanser Card-2 -->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/skin1004-cleanserbha-removebg-preview.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+
+                bottom: 247px;
+                left: -15px;
+                width: 255px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Skin1004 - bha cleanser (125ml)</h5>
+              <p class="card-text">
+                Exfoliate, and purify the skin. Suitable for daily use on all skin types.
+                <br />$15.00
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Anua-cleanser Card-3 -->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/anua-cleanser-removebg-preview.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+                left: 0%;
+                bottom: 230px;
+                left: -28px;
+                width: 290px;
+                padding: 18px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Anua - cleanser (150ml)</h5>
+              <p class="card-text">
+                Gently cleanse, maintaining the skin's moisture , making it suitable for sensitive skin.
+                $13.94
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- boj-cleanser card-4-->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/Boj-cleanser-removebg-preview.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+                left: 0%;
+                bottom: 240px;
+                left: 7px;
+                width: 220px;
+                padding: 18px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Beauty of Joseon - cleanser (125ml)</h5>
+              <p class="card-text">
+                Hydrate, exfoliate, and refresh the skin.  Suitable for sensitive skin.
+                <br />
+                $18.00
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- shop cards - suncream -->
+      <div
+        class="row row-cols-1 row-cols-md-4 g-4"
+        id="suncream"
+        style="
+          z-index: 20;
+          position: relative;
+          bottom: -780px;
+          left: 200px;
+          width: 1200px;
+          margin-top: 80px;
+        "
+      >
+        <!-- skin1004-suncream Card-1 -->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/skin1004-cica-suncream-removebg-preview.png"
+               class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+                left: 0%;
+                bottom: 220px;
+                left: 0px;
+                width: 240px;
+                padding: 18px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Skin1004 - cica suncream (50ml)</h5>
+              <p class="card-text">
+                Lightweight, broad-spectrum sunscreen perfect for sensitive skin. <br> $19.50
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Anua-suncream Card-2 -->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/Boj-suncream-removebg-preview.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+
+                bottom: 240px;
+                left: -18px;
+                width: 260px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Beauty Of Joseon - suncream (50ml)</h5>
+              <p class="card-text">
+                Lightweight, creamy formula absorbs easily suitable for sensitive skin.
+                <br />$18.00
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Anua Card-3 -->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/Anua-suncream-removebg-preview.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+                left: 0%;
+                bottom: 240px;
+                left: -30px;
+                width: 290px;
+                padding: 18px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Anua - suncream (50ml)</h5>
+              <p class="card-text">
+                Hydrating and soothing, strong sun protection, non-greasy silky finish. <br />
+                $23.00
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Boj-sunstick(2) card-4-->
+        <div class="col">
+          <div
+            class="card h-100"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+              border-radius: 10px;
+              backdrop-filter: blur(10px);
+              margin: 20px;
+              padding-top: 200px;
+            "
+          >
+            <img
+              src="images/Boj-sunstick-removebg-preview.png"
+              class="card-img-top"
+              alt="..."
+              style="
+                position: absolute;
+                left: 0%;
+                bottom: 240px;
+                left: -70px;
+                width: 300px;
+                padding: 18px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">Beauty of Joseon - Sun stick (50ml)</h5>
+              <p class="card-text">
+                Mugwort & camellia extracts calm and hydrate, making it perfect for sensitive skin
+                <br />
+                $17.70
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="background-color: #798b76; color: #f9f9a7"
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      style="position: sticky; top: 600px; margin-left: 1440px; font-size: 40px"
+    >
+      <!-- go to back -->
+      <a
+        href="index.html#shop"
+        style="color: black; position: relative; left: -1400px; bottom: -68px"
+      >
+        <i class="fa-solid fa-circle-left"></i
+      ></a>
+      <!-- to top -->
+      <a href="#shop-page" style="color: black">
+        <i class="fa-solid fa-circle-up"></i
+      ></a>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!--fontawesome icon -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/js/all.min.js"
+      integrity="sha512-8py0AXTY8pfAroJmBkYfJ+VuKUKMMsUOC1MldW9kkC/k4SZi6AexSDS60QYn41U2rp8KL9IpVHy8FxW2TDmjDA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
